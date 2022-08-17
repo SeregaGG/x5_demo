@@ -1,0 +1,41 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests.ui",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestRegistrationForm",
+        "children" : [ {
+          "name" : "test_send_email[kholstinin@lanit.ru]",
+          "uid" : "52789b53049c56e6",
+          "parentUid" : "ec2e8bd4af773deac510c5423905be91",
+          "status" : "broken",
+          "time" : {
+            "start" : 1660683413986,
+            "stop" : 1660683434525,
+            "duration" : 20539
+          },
+          "flaky" : false,
+          "parameters" : [ "'kholstinin@lanit.ru'" ]
+        }, {
+          "name" : "test_send_email[lavrentiev@lanit.ru]",
+          "uid" : "2775451575ee2648",
+          "parentUid" : "ec2e8bd4af773deac510c5423905be91",
+          "status" : "broken",
+          "time" : {
+            "start" : 1660683437359,
+            "stop" : 1660683456579,
+            "duration" : 19220
+          },
+          "flaky" : false,
+          "parameters" : [ "'lavrentiev@lanit.ru'" ]
+        } ],
+        "uid" : "ec2e8bd4af773deac510c5423905be91"
+      } ],
+      "uid" : "4b0692450e3380276e0df9f8e493e707"
+    } ],
+    "uid" : "3965134f6f8c1be9f46795103934f428"
+  } ],
+  "name" : "suites"
+}

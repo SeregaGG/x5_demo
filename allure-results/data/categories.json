@@ -1,0 +1,41 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \n            failed while waiting 15 seconds\n            to assert Visible\n            for first_by('css selector', 'div#password input')\n\n            reason: NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div#password input\"}\n  (Session info: chrome=80.0.3987.132)\n\n            screenshot: file:///usr/src/x5/reports/selene/screen_1660683412181.png",
+      "children" : [ {
+        "name" : "test_send_email[kholstinin@lanit.ru]",
+        "uid" : "52789b53049c56e6",
+        "parentUid" : "6659a42cd744749788ec69e619cdb77c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1660683413986,
+          "stop" : 1660683434525,
+          "duration" : 20539
+        },
+        "flaky" : false,
+        "parameters" : [ "'kholstinin@lanit.ru'" ]
+      } ],
+      "uid" : "6659a42cd744749788ec69e619cdb77c"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \n            failed while waiting 15 seconds\n            to assert Visible\n            for first_by('css selector', 'div#password input')\n\n            reason: NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div#password input\"}\n  (Session info: chrome=80.0.3987.132)\n\n            screenshot: file:///usr/src/x5/reports/selene/screen_1660683412182.png",
+      "children" : [ {
+        "name" : "test_send_email[lavrentiev@lanit.ru]",
+        "uid" : "2775451575ee2648",
+        "parentUid" : "fa6ff0d657783c5bca7f8a0e2b589f56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1660683437359,
+          "stop" : 1660683456579,
+          "duration" : 19220
+        },
+        "flaky" : false,
+        "parameters" : [ "'lavrentiev@lanit.ru'" ]
+      } ],
+      "uid" : "fa6ff0d657783c5bca7f8a0e2b589f56"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

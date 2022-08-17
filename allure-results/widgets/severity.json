@@ -1,0 +1,21 @@
+[ {
+  "uid" : "2775451575ee2648",
+  "name" : "test_send_email[lavrentiev@lanit.ru]",
+  "time" : {
+    "start" : 1660683437359,
+    "stop" : 1660683456579,
+    "duration" : 19220
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "52789b53049c56e6",
+  "name" : "test_send_email[kholstinin@lanit.ru]",
+  "time" : {
+    "start" : 1660683413986,
+    "stop" : 1660683434525,
+    "duration" : 20539
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

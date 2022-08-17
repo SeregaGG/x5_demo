@@ -1,0 +1,9 @@
+"Status","Name","Duration in ms","Description"
+"broken","tests.ui.test_login.TestRegistrationForm#test_send_email","20539","
+        Описание теста.
+        Открыть страницу https://gmail.com/
+        "
+"broken","tests.ui.test_login.TestRegistrationForm#test_send_email","19220","
+        Описание теста.
+        Открыть страницу https://gmail.com/
+        "
