@@ -1,21 +1,31 @@
 [ {
-  "uid" : "2775451575ee2648",
+  "uid" : "ab5fb7864ab7958e",
   "name" : "test_send_email[lavrentiev@lanit.ru]",
   "time" : {
-    "start" : 1660683437359,
-    "stop" : 1660683456579,
-    "duration" : 19220
+    "start" : 1660823264268,
+    "stop" : 1660823283659,
+    "duration" : 19391
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "52789b53049c56e6",
+  "uid" : "eb599f4b274ffe2b",
   "name" : "test_send_email[kholstinin@lanit.ru]",
   "time" : {
-    "start" : 1660683413986,
-    "stop" : 1660683434525,
-    "duration" : 20539
+    "start" : 1660823241780,
+    "stop" : 1660823260205,
+    "duration" : 18425
   },
   "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d3904efec65bf290",
+  "name" : "test_fill_block",
+  "time" : {
+    "start" : 1660823229905,
+    "stop" : 1660823238933,
+    "duration" : 9028
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]
