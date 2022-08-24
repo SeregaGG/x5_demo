@@ -15,26 +15,26 @@ class SearchPage:
     DEFAULT_VALUE = '-'
 
     def __init__(self):
-        self._form_search_main = s(by.xpath('//*[@id="formSearchMain"]'))  # block for screen
-        self._title_field = s(by.xpath('//*[@id="find_film"]'))  # input type
-        self._country_selector = s(by.xpath('//*[@id="country"]'))  # select type
-        self._genre_selector = s(by.xpath('//*[@id="m_act[genre]"]'))  # select type
-        self._search_button = s(by.xpath('//*[@id="formSearchMain"]/input[@type="button"]'))
+        self._form_search_main = s(by.xpath('//form[@id="formSearchMain"]'))  # block for screen
+        self._title_field = s(by.xpath('//input[@id="find_film"]'))  # input type
+        self._country_selector = s(by.xpath('//select[@id="country"]'))  # select type
+        self._genre_selector = s(by.xpath('//select[@id="m_act[genre]"]'))  # select type
+        self._search_button = s(by.xpath('//form[@id="formSearchMain"]/input[@type="button" and @value="поиск"]'))
 
     @allure.step('Заполнение поля поиска по имени')
-    def fill_title_field(self, title):
+    def _fill_title_field(self, title):
         self._title_field.send_keys(title)
         attach_allure_screen(self._form_search_main, attach_name=f'Поиск по названию - {title}')
 
     @allure.step('Выбор страны')
-    def select_country(self, country):
+    def _select_country(self, country):
         select_country_obj = Select(self._country_selector)
         select_country_obj.select_by_visible_text(country)
         if not country == self.DEFAULT_VALUE:
             attach_allure_screen(self._form_search_main, attach_name=f'Поиск по стране - {country}')
 
     @allure.step('Выбор жанров')
-    def select_genres(self, genres):
+    def _select_genres(self, genres):
         if not genres == self.DEFAULT_VALUE:
             if len(genres) > self.GENRES_LIMIT:
                 genres = genres[0:self.GENRES_LIMIT]
@@ -47,11 +47,11 @@ class SearchPage:
     @allure.step('Заполнение блока')
     def search_film(self, **kwargs):
 
-        self.fill_title_field(kwargs.get('title'))
+        self._fill_title_field(kwargs.get('title'))
 
-        self.select_country(kwargs.get('country', self.DEFAULT_VALUE))
+        self._select_country(kwargs.get('country', self.DEFAULT_VALUE))
 
-        self.select_genres(kwargs.get('genre', self.DEFAULT_VALUE))
+        self._select_genres(kwargs.get('genre', self.DEFAULT_VALUE))
 
         attach_allure_screen(self._form_search_main, attach_name='Готовый блок')
 
