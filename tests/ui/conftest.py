@@ -1,3 +1,4 @@
+
 import pytest
 
 from framework.webdriver_manager import init_driver, close_driver, init_driver_if_not_open
@@ -20,7 +21,7 @@ def close_driver_after_test(request):
     request.addfinalizer(close_driver)
 
 
-@pytest.yield_fixture()
+@pytest.fixture
 def allure_screen(request):
     yield
     screen_for_allure()
